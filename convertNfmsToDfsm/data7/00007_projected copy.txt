@@ -1,0 +1,15 @@
+s0 -- euro / ok() -> s1
+s1 -- no_sugar / ok() -> s2
+s1 -- sugar / ok() -> s3
+s2 -- coffee / ok() -> s6
+s2 -- coffee / ok() -> s5
+s2 -- tea / ok() -> s7
+s3 -- coffee / ok() -> s9
+s3 -- tea / ok() -> s10
+s5 -- pour_coffee / ok() -> s11
+s6 -- pour_coffee / ok() -> s11
+s7 -- pour_tea / ok() -> s11
+s9 -- pour_sugar / ok() -> s6
+s10 -- pour_sugar / ok() -> s7
+s11 -- display_done / ok() -> s12
+s12 -- cup_taken / ok() -> s0

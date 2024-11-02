@@ -1,0 +1,11 @@
+All Features: Command, Start, Stop, MethaneDetect, WaterRegulation, Low, Normal, High
+Common Features: MinePumpSys
+Common Alphabet: receiveMsg, end
+Command: commandMsg
+Start: startCmd, isRunning, isNotRunning, isReady, setReady
+Stop: stopCmd, isRunning, isNotRunning, pumpStop, setStop
+MethaneDetect: palarmMsg, isRunning, pumpStop, setMethaneStop, isNotRunning, isMethaneStop
+WaterRegulation: levelMsg
+Low: lowLevel, isRunning, pumpStop, setLowStop, isNotRunning, isLowStop
+Normal: end
+High: highLevel, isReady, setReady, pumpStart, setRunning, isNotReady, isRunning, isStopped

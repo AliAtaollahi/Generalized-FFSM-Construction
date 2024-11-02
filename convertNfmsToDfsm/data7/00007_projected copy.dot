@@ -1,0 +1,31 @@
+digraph g {
+	edge [lblstyle="above, sloped"];
+	s0 [shape="circle" label="0@[()]"];
+	s1 [shape="circle" label="1@[()]"];
+	s2 [shape="circle" label="2@[()]"];
+	s3 [shape="circle" label="3@[()]"];
+	s5 [shape="circle" label="5@[()]"];
+	s6 [shape="circle" label="6@[()]"];
+	s7 [shape="circle" label="7@[()]"];
+	s9 [shape="circle" label="9@[()]"];
+	s10 [shape="circle" label="10@[()]"];
+	s11 [shape="circle" label="11@[()]"];
+	s12 [shape="circle" label="12@[()]"];
+	s0 -> s1 [label="euro / ok()"];
+	s1 -> s2 [label="no_sugar / ok()"];
+	s1 -> s3 [label="sugar / ok()"];
+	s2 -> s6 [label="coffee / ok()"];
+	s2 -> s5 [label="coffee / ok()"];
+	s2 -> s7 [label="tea / ok()"];
+	s3 -> s9 [label="coffee / ok()"];
+	s3 -> s10 [label="tea / ok()"];
+	s5 -> s11 [label="pour_coffee / ok()"];
+	s6 -> s11 [label="pour_coffee / ok()"];
+	s7 -> s11 [label="pour_tea / ok()"];
+	s9 -> s6 [label="pour_sugar / ok()"];
+	s10 -> s7 [label="pour_sugar / ok()"];
+	s11 -> s12 [label="display_done / ok()"];
+	s12 -> s0 [label="cup_taken / ok()"];
+	__start0 [label="" shape="none" width="0" height="0"];
+	__start0 -> s0;
+}

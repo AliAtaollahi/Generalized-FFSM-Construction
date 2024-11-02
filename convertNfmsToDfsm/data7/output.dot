@@ -1,0 +1,28 @@
+digraph g {
+	edge [lblstyle="above, sloped"];
+	s0 [shape="circle" label="0@[()]"];
+	s1 [shape="circle" label="1@[()]"];
+	s2 [shape="circle" label="2@[()]"];
+	s3 [shape="circle" label="3@[()]"];
+	s4 [shape="circle" label="4@[()]"];
+	s5 [shape="circle" label="5@[()]"];
+	s6 [shape="circle" label="6@[()]"];
+	s7 [shape="circle" label="7@[()]"];
+	s8 [shape="circle" label="8@[()]"];
+	s9 [shape="circle" label="9@[()]"];
+	s0 -> s1 [label="euro/ok()"];
+	s1 -> s2 [label="no_sugar/ok()"];
+	s1 -> s3 [label="sugar/ok()"];
+	s2 -> s9 [label="coffee/ok()"];
+	s2 -> s6 [label="tea/ok()"];
+	s3 -> s4 [label="coffee/ok()"];
+	s3 -> s5 [label="tea/ok()"];
+	s4 -> s9 [label="pour_sugar/ok()"];
+	s5 -> s6 [label="pour_sugar/ok()"];
+	s6 -> s7 [label="pour_tea/ok()"];
+	s7 -> s8 [label="display_done/ok()"];
+	s8 -> s0 [label="cup_taken/ok()"];
+	s9 -> s7 [label="pour_coffee/ok()"];
+	__start0 [label="" shape="none" width="0" height="0"];
+	__start0 -> s0;
+}
